@@ -1,0 +1,17 @@
+pandas 
+mlflow==2.2.2
+notebook
+numpy
+scikit-learn
+clyent==1.2.1
+requests_mock
+matplotlib
+python-box==6.0.2
+pyAML
+tqdm
+ensure==1.0.2
+joblib
+types-PyYAML==6.0.1
+Flask
+Flask-Cors
+-e .
