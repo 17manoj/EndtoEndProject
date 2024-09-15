@@ -22,7 +22,11 @@ def read_yaml(path_to_yaml : Path) -> ConfigBox:
         ConfigBox: ConfigBix Type
     """
     try:
+        # print('current directory ->', os.getcwd() )
+        os.chdir(r'c:\Users\MANOJ\Desktop\EndToEndProject')
+        # print('current directory ->', os.getcwd() )
         with open(path_to_yaml) as yaml_file:
+       
             content = yaml.safe_load(yaml_file)
             logger.info(f"yaml file: {path_to_yaml} loaded successfully")
             return ConfigBox(content)
